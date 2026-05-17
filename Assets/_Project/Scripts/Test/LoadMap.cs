@@ -49,10 +49,7 @@ namespace MSU.Test
 
             WzDirectory wzd = wzfm.GetWzDir("Map");
 
-            //foreach (WzImage img in wzd.WzImages) print(img.name);
-            //foreach (WzDirectory img in wzd.WzDirectories) print(img.name);
-
-            var s = wzd["Worldmap"]["WorldMap00.img"] as WzImage;
+            var s = wzd["WorldMap"]["WorldMap000.img"] as WzImage;
             var sub = s["BaseImg"] as WzSubProperty;
             var bitmap = sub["0"].GetBitmap();
 
